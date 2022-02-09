@@ -4,6 +4,7 @@
         <v-col cols="8" class="d-flex flex-column" style="min-height:calc(100vh - 80px);">
             <v-card class="my-auto mx-auto text-center transparent_bg" max-width="500" min-width="334" style="background-color:transparent;box-shadow:none;">
                 <div class="title mb-5">Tic tac toe</div>
+                <div v-for="i in 10" :key="i" class="pt-5"></div>
                 <div class="mb-3">
                     <router-link :to="{'name':'Game Screen'}" class="text-decoration-none">
                       <v-card>
@@ -32,6 +33,9 @@
 <script>
 export default {
     name: 'Home',
+    props:{
+        setting:Object,
+    }
 }
 </script>
 

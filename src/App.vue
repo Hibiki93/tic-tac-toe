@@ -15,7 +15,7 @@ export default {
 
   data: () => ({
     setting:{
-      difficulty:1,
+      difficult:1,
     }
   }),
 };
