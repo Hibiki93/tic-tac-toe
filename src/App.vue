@@ -12,10 +12,9 @@
 
 export default {
   name: 'App',
-
   data: () => ({
     setting:{
-      difficult:1,
+      difficult:2,
     }
   }),
 };

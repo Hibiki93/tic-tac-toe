@@ -9,18 +9,17 @@
                 <v-card-text>
                     <v-row>
                         <v-col cols="12">
+                            <div class="text-h6 text-danger">Bot difficult setting not complete yet</div>
                             <div class="text-h6">Bot difficult</div>
                         </v-col>
                         <v-col cols="12">
                             <v-radio-group v-model="setting.difficult" row>
-                                <v-radio label="Easy" value="1"></v-radio>
-                                <v-radio label="Normal" value="2"></v-radio>
-                                <v-radio label="Hard" value="3"></v-radio>
+                                <v-radio v-for="n in 3" :key="n" :label="`${n}`" :value="n"></v-radio>
                             </v-radio-group>
                         </v-col>
                         <v-col cols="12">
                             <v-btn :to="{'name':'Home'}">
-                                    Back To Main Pages
+                                Back To Main Pages
                             </v-btn>
                         </v-col>
                     </v-row>
